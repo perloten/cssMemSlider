@@ -1,0 +1,48 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+	background-color: #383838;
+    overflow: hidden;
+}
+
+.inverted {
+	filter: invert(60%);
+    width: 100px;
+    margin: 20px;
+}
+
+.inverted:hover {
+    filter: invert(0);
+    transition: ease-in-out .5s;
+}
+
+h1 {
+    font-size: 48px;
+    text-align: center;
+    color: azure;
+}
+
+footer>a {
+    color: rgb(138, 126, 126);
+    text-decoration: none;
+}
+.container {
+	height: 80vh;
+	margin: 50px auto 0;
+	position: relative;
+	width: 1800px;
+}
+
+.slider {
+	height: inherit;
+	overflow: hidden;
+	position: relative;
+	width: inherit;
+    box-shadow: rgba(0, 0, 0, 0.60) 0px 2px 4px;
+}
+
