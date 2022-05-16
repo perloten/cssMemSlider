@@ -8,42 +8,50 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;900&display=swap" rel="stylesheet">
-    <title>Slider</title>
-    
+    <title>cssMemSlider</title>
 </head>
 <body>
     <header>
         <a href="https://rs.school/" class="logo" tadget="_blank">
             <img src="https://app.rs.school/static/images/logo-rsschool3.png" alt="RS school" class="inverted">
         </a>
-    </header>
+    </header> 
     <main>
         <h1>CSS Mem Slider</h1>
-        
         <div class="container">
-            <input type="radio" name="mem" id="mem-1" checked>
-            <input type="radio" name="mem" id="mem-2">
-            <input type="radio" name="mem" id="mem-3">
-            <input type="radio" name="mem" id="mem-4">
-            <input type="radio" name="mem" id="mem-5">
-            <div class="slider">
-                <div class="slides mem-1"></div>
-                <div class="slides mem-2"></div>
-                <div class="slides mem-3"></div>
-                <div class="slides mem-4"></div>
-                <div class="slides mem-5"></div>
-            </div>	
-            <div class="controls">
-                <label for="mem-1"></label>
-                <label for="mem-2"></label>
-                <label for="mem-3"></label>
-                <label for="mem-4"></label>
-                <label for="mem-5"></label>
+            <div class="slides">
+                <img src="assets/6.jpg" alt="For fun" class="slides-item">
+                <img src="assets/2.jpg" alt="Паши и не греши" class="slides-item">
+                <img src="assets/3.jpg" alt="Fear has big eyes" class="slides-item">
+                <img src="assets/4.jpg" alt="What kind of monster are you?" class="slides-item">
+                <img src="assets/5.jpg" alt="You are being watched" class="slides-item">
+                <img src="assets/1.jpg" alt="Смотри выше" class="slides-item"> 
+            </div>
+            <div class="buttons-block">
+                <div id="prev"></div>
+                <div id="next"></div>
+            </div>
+            <div class="slider-caption">
+                <div class="text-block">
+                    <p class="image-caption">For fun</p>
+                </div>
+                <div class="dots-block">
+                    <div class="dots-item active"></div>
+                    <div class="dots-item"></div>
+                    <div class="dots-item"></div>
+                    <div class="dots-item"></div>
+                    <div class="dots-item"></div>
+                    <div class="dots-item"></div>
+                </div>
             </div>
         </div>
     </main>
-    <footer>
-        <a href="#">Image's source</a>
+    <footer class="footer">
+            <div class="footer__year">
+              <script>dt = new Date();document.write(dt.getFullYear());</script>
+            </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
